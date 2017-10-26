@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-'''Turn every message into an Big Text.'''
+'''Turn every message into Big Text.'''
 
 
 class Big:
@@ -13,7 +13,7 @@ class Big:
         
     @commands.command(pass_context=True, aliases=["tb","big"])
     async def bigtext(self, ctx):
-        """Turn every message into an Big Text."""
+        """Turn every message into Big Text."""
         self.enabled = not self.enabled
         await ctx.send(self.bot.bot_prefix + "Big Text Toggled to {}!".format(self.enabled))
 
