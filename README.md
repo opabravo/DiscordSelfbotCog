@@ -1,23 +1,14 @@
 ## DiscordSelfbotCog
 
-For Appu's Selfbot
 
-<iframe src="https://discordapp.com/widget?id=315720242297044992&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
 ```markdown
-Syntax highlighted code block
+Find me at :
+[<img src="https://canary.discordapp.com/api/guilds/315720242297044992/widget.png?style=banner2">](https://discord.gg/rWA2ATv)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+# For Appu's Selfbot
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
 ```
