@@ -113,7 +113,7 @@ class Gray:
         """Slap your senpai/waifu!"""     
         author = ctx.message.author.mention
         
-        slap = "**{0} got slapped by {1}**"
+        slap = "**{} got slapped by {}**"
         slapself = "**{} slapped himelf**"
         
         choices = ['http://i.imgur.com/0D0Mijk.gif', 'https://i.imgur.com/4VePCc4.gif', 'http://i.imgur.com/3wv088f.gif', 'http://i.imgur.com/7mkRzr1.gif', 'http://i.imgur.com/8fEyFHe.gif', 'https://i.imgur.com/5epo3Ls.gifv', 'https://i.imgur.com/5Hx4D9n.gif', 'https://i.imgur.com/j9Gvrrd.gif']
@@ -122,7 +122,7 @@ class Gray:
         
         if member:
             mention = member.mention
-            embed = discord.Embed(description=slap.format(author, mention), color=discord.Colour.from_rgb(r=randint(0, 255), g=randint(0, 255), b=randint(0, 255)))
+            embed = discord.Embed(description=slap.format(mention,author), color=discord.Colour.from_rgb(r=randint(0, 255), g=randint(0, 255), b=randint(0, 255)))
             
         else:
             embed = discord.Embed(description=slapself.format(author), color=discord.Colour.from_rgb(r=randint(0, 255), g=randint(0, 255), b=randint(0, 255)))
