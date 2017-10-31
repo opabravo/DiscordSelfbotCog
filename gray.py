@@ -91,7 +91,7 @@ class Gray:
         """Pat your senpai/waifu!"""
         author = ctx.message.author.mention
         
-        pat = "**{0} got patted by {1}!**"
+        pat = "**{} got patted by {}!**"
         patself="{} patted himelf :hugging: "
         
         choices = ['http://i.imgur.com/10VrpFZ.gif', 'http://i.imgur.com/x0u35IU.gif', 'http://i.imgur.com/0gTbTNR.gif', 'http://i.imgur.com/hlLCiAt.gif', 'http://i.imgur.com/sAANBDj.gif', 'https://i.imgur.com/wtxwpm1.mp4', 'https://i.imgur.com/rQdg0Xr.gif', 'https://i.imgur.com/3eR7weH.gif', 'https://i.imgur.com/cK8Ro3x.gif', 'https://i.imgur.com/g1H0dHv.gif', 'https://i.imgur.com/qtHlt3n.gif', 'https://i.imgur.com/K3fad03.gif', 'https://i.imgur.com/bzzodCZ.mp4', 'https://i.imgur.com/usxXmP0.gif', 'https://i.imgur.com/mLyG5LV.gif', 'https://i.imgur.com/sIOXrRK.gif']
@@ -100,7 +100,7 @@ class Gray:
         
         if member:
             mention = member.mention
-            embed = discord.Embed(description=pat.format(author, mention), color=discord.Colour.from_rgb(r=randint(0, 255), g=randint(0, 255), b=randint(0, 255)))
+            embed = discord.Embed(description=pat.format(mention,author), color=discord.Colour.from_rgb(r=randint(0, 255), g=randint(0, 255), b=randint(0, 255)))
             
         else:
             embed = discord.Embed(description=patself.format(author), color=discord.Colour.from_rgb(r=randint(0, 255), g=randint(0, 255), b=randint(0, 255)))
