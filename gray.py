@@ -116,7 +116,7 @@ class Gray:
         slap = "**{} got slapped by {}**"
         slapself = "**{} slapped himelf**"
         
-        choices = ['http://i.imgur.com/0D0Mijk.gif', 'https://i.imgur.com/4VePCc4.gif', 'http://i.imgur.com/3wv088f.gif', 'http://i.imgur.com/7mkRzr1.gif', 'http://i.imgur.com/8fEyFHe.gif', 'https://i.imgur.com/5epo3Ls.gifv', 'https://i.imgur.com/5Hx4D9n.gif', 'https://i.imgur.com/j9Gvrrd.gif']
+        choices = ['https://i.imgur.com/EO8udG1.gif', 'https://i.imgur.com/lMmn1wy.gif', 'https://i.imgur.com/TuSUTg5.gif', 'https://i.imgur.com/9Ql97mO.gif', 'https://i.imgur.com/Qkv0q8n.gif', 'https://i.imgur.com/VBGqeIU.gif', 'https://i.imgur.com/uPZwGFQ.gif', 'https://i.imgur.com/Su0X9iF.gif', 'https://i.imgur.com/eNiOIMB.gif',  'https://i.imgur.com/gsAGyoI.gif', 'https://i.imgur.com/sF1BQg2.gif', 'https://i.imgur.com/zTiJjev.mp4']
         
         image = random.choice(choices)
         
