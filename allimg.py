@@ -18,13 +18,18 @@ class AllImg:
         await ctx.send(self.bot.bot_prefix + "Successfully toggled turning all messages to embeds to `{}`!".format(self.enabled))
         
     async def on_message(self, message):
+        convert={" ": "+"}
+        result = ""
+        
         if message.author == self.bot.user:
             if not message.embeds and self.enabled:
-                image = "https://dummyimage.com/1280x480/36393E/ffffff.png&text={}".format(message.content)
+
+                result = message.content.lower().translate(str.maketrans(convert))
+                image = "https://dummyimage.com/1280x480/36393E/ffffff.png&text={}".format(result)
                 #await message.delete()
                 embed = discord.Embed(color=discord.Colour.from_rgb(r=randint(0, 255), g=randint(0, 255), b=randint(0, 255)))
                 embed.set_image(url=image)
-                await message.edit(embed=embed)
+                await message.edit(content="", embed=embed)
 
 
 
