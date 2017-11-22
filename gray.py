@@ -3,12 +3,12 @@ from random import randint
 import random
 import discord
 
+
 class Gray:
     def __init__(self, bot):
         self.bot = bot
         
-        
-    @commands.command(name="check")
+    @commands.command(pass_context=True)
     async def check(self, ctx, text):
         """Checks A Link""" 
         msg = '```diff\n+ Result : ```'+'https://spoopy.link/' + str(text)
@@ -26,7 +26,7 @@ class Gray:
         hug = "**{} gave {} a hug!**"
         hugself= "**{} Hugs himself TT**"
         
-        choices = ['http://i.imgur.com/sW3RvRN.gif', 'http://i.imgur.com/gdE2w1x.gif', 'http://i.imgur.com/zpbtWVE.gif', 'http://i.imgur.com/ZQivdm1.gif', 'http://i.imgur.com/MWZUMNX.gif', 'https://i.imgur.com/8futZnQ.gif' ,'https://i.imgur.com/viWWVub.gif', 'http://imgur.com/a/N7F1C', 'https://i.imgur.com/mXGKeyN.gif' ,'https://i.imgur.com/mxaqyUu.gif', 'https://i.imgur.com/dLUetXa.gif', 'https://i.imgur.com/hM1LcZf.gif']
+        choices = ['http://i.imgur.com/sW3RvRN.gif', 'http://i.imgur.com/gdE2w1x.gif', 'http://i.imgur.com/zpbtWVE.gif', 'http://i.imgur.com/ZQivdm1.gif', 'http://i.imgur.com/MWZUMNX.gif', 'https://i.imgur.com/8futZnQ.gif' ,'https://i.imgur.com/viWWVub.gif', 'https://i.imgur.com/S27E05M.gif', 'https://i.imgur.com/mXGKeyN.gif' ,'https://i.imgur.com/mxaqyUu.gif', 'https://i.imgur.com/dLUetXa.gif', 'https://i.imgur.com/hM1LcZf.gif']
         
         image = random.choice(choices)
         
@@ -72,7 +72,7 @@ class Gray:
         lick = "**{0} licked {1}!**"
         lickself="{} licked himself :thinking: "
         
-        choices = ['https://images-ext-2.discordapp.net/external/EVS-yozpRCwqM9JrkkgoTry1IqkDyTJVNjF7ZhIik5U/https/cdn.weeb.sh/images/S1Ill0_vW.gif', 'https://images-ext-2.discordapp.net/external/QAh4YL0JFxeg7wWxw4G3cCucyPRj2fHB3w3zmONGtjg/https/cdn.weeb.sh/images/Bkxge0uPW.gif', 'https://images-ext-2.discordapp.net/external/9xiregisvDewxtEC9iCJPqJWNlrFEn3kcj3YA-ev_Po/https/cdn.weeb.sh/images/H1EJxR_vZ.gif', 'https://images-ext-2.discordapp.net/external/9bHT8aeSTZnMcfTFsR4S_IawF7WOUwK4fKLGhIHVYnw/https/cdn.weeb.sh/images/Syg8gx0OP-.gif', 'https://images-ext-1.discordapp.net/external/1AoFzXaNiKcnBc4OrS3R7jsf9MJEDcikx38nUkbFQW8/https/cdn.weeb.sh/images/HJRRyAuP-.gif', 'https://images-ext-2.discordapp.net/external/j_SDM7t05yLMhzcgBn_omAVg0RbMRpSaK4m_YzTzvuU/https/cdn.weeb.sh/images/HJ2ggROPZ.gif', 'https://images-ext-2.discordapp.net/external/Q1_n8vJ0MNURUGkRTYneZQ17_zzG1Jtw9ixyHyOecQY/https/cdn.weeb.sh/images/S17kgRuP-.gif', 'https://images-ext-1.discordapp.net/external/thImffzNHXbD4uB3R-av9x0cvsdmumPWfN8IW7huw1c/https/cdn.weeb.sh/images/Bkagl0uvb.gif', 'http://data.whicdn.com/images/137509075/original.gif', 'http://i0.kym-cdn.com/photos/images/newsfeed/001/145/832/ed1.gif', 'http://i.imgur.com/jMSv255.gif', 'http://pa1.narvii.com/5934/f8f511890cb7372160b907fbaf4cbcd9fb32f91b_hq.gif']
+        choices = ['https://i.imgur.com/zIDBM1i.gif', 'https://i.imgur.com/44jdPuq.mp4', 'https://i.imgur.com/CxMooY1.gif', 'https://i.imgur.com/VRstYFu.gif', 'https://i.imgur.com/GP6brBA.gif', 'https://i.imgur.com/sPvTcLf.mp4', 'https://i.imgur.com/WTgUmla.mp4', 'https://i.imgur.com/i25AW7V.gif', 'https://i.imgur.com/ftuM6Ep.gif', 'https://i.imgur.com/LR8xv7v.gif', 'http://i.imgur.com/jMSv255.gif', 'https://i.imgur.com/wJ5iDyB.gif']
         
         image = random.choice(choices)
         
@@ -129,8 +129,7 @@ class Gray:
         
         embed.set_image(url=image)
         await ctx.send(embed=embed)
-
-            
+        
         
 def setup(bot):
     bot.add_cog(Gray(bot))
