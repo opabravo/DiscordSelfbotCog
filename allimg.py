@@ -17,7 +17,7 @@ class AllImg:
     async def toggleimg(self, ctx):
         """Turns every message into image"""
         self.enabled = not self.enabled
-        await ctx.send(self.bot.bot_prefix + "Successfully toggled turning all messages to embeds to `{}`!".format(self.enabled))
+        await ctx.send(self.bot.bot_prefix + "Successfully toggled turning all messages to images to `{}`!".format(self.enabled))
         
     async def on_message(self, message):
         
